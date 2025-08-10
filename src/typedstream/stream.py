@@ -122,6 +122,8 @@ SYSTEM_VERSION_MAC_OS_X = 1000
 _TAG_INTEGER_2 = -127
 # Indicates an integer value, stored in 4 bytes.
 _TAG_INTEGER_4 = -126
+# Indicates an integer value, stored in 8 bytes.
+_TAG_INTEGER_8 = -121
 # Indicates a floating-point value, stored in 4 or 8 bytes (depending on whether it is a float or a double).
 _TAG_FLOATING_POINT = -125
 # Indicates the start of a string value or an object that is stored literally and not as a backreference.
