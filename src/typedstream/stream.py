@@ -679,6 +679,8 @@ class TypedStreamReader(typing.ContextManager["TypedStreamReader"], typing.Itera
 			return int.from_bytes(self._read_exact(2), self.byte_order, signed=signed)
 		elif head == _TAG_INTEGER_4:
 			return int.from_bytes(self._read_exact(4), self.byte_order, signed=signed)
+		elif head == _TAG_INTEGER_8:
+			return int.from_bytes(self._read_exact(8), self.byte_order, signed=signed)
 		else:
 			raise InvalidTypedStreamError(f"Invalid head tag in this context: {head} ({head & 0xff:#x})")
 	
